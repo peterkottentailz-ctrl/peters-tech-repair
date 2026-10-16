@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peter's Tech Repair</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#0a0a0a;
+color:#fff;
+line-height:1.6;
+}
+
+header{
+background:#111;
+padding:15px;
+position:sticky;
+top:0;
+border-bottom:2px solid #ff1f1f;
+z-index:1000;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+max-width:1200px;
+margin:auto;
+}
+
+.logo-text{
+font-size:1.5rem;
+font-weight:bold;
+color:#ff1f1f;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+min-height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px 20px;
+background:linear-gradient(to bottom,#0a0a0a,#111);
+}
+
+.hero-content{
+max-width:900px;
+}
+
+.hero img{
+width:250px;
+max-width:100%;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:3.5rem;
+color:#ff1f1f;
+margin-bottom:10px;
+}
+
+.hero h2{
+font-size:1.5rem;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:1.1rem;
+color:#ccc;
+}
+
+.buttons{
+margin-top:25px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 25px;
+margin:10px;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn-primary{
+background:#ff1f1f;
+color:white;
+}
+
+.btn-primary:hover{
+box-shadow:0 0 15px #ff1f1f;
+}
+
+.btn-secondary{
+border:2px solid #ff1f1f;
+color:white;
+}
+
+.btn-secondary:hover{
+background:#ff1f1f;
+}
+
+section{
+padding:80px 20px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+.section-title{
+text-align:center;
+color:#ff1f1f;
+margin-bottom:40px;
+font-size:2.5rem;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#151515;
+padding:25px;
+border-radius:12px;
+transition:0.3s;
+border:1px solid #222;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 0 15px rgba(255,31,31,.3);
+border-color:#ff1f1f;
+}
+
+.card h3{
+color:#ff1f1f;
+margin-bottom:10px;
+}
+
+.about{
+text-align:center;
+max-width:800px;
+margin:auto;
+color:#ccc;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+.contact-box{
+background:#151515;
+padding:25px;
+border-radius:12px;
+}
+
+.contact-box h3{
+color:#ff1f1f;
+margin-bottom:15px;
+}
+
+input,
+textarea{
+width:100%;
+padding:12px;
+margin-bottom:12px;
+background:#222;
+border:none;
+color:white;
+border-radius:5px;
+}
+
+button{
+background:#ff1f1f;
+color:white;
+border:none;
+padding:14px;
+width:100%;
+border-radius:5px;
+cursor:pointer;
+font-weight:bold;
+}
+
+button:hover{
+box-shadow:0 0 12px #ff1f1f;
+}
+
+footer{
+text-align:center;
+padding:25px;
+background:#050505;
+border-top:1px solid #222;
+color:#999;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.3rem;
+}
+
+nav ul{
+display:none;
+}
+
+.contact-grid{
+grid-template-columns:1fr;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<div class="logo-text">Peter's Tech Repair</div>
+
+<ul>
+<li><a href="#services">Services</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<img src="logo.png" alt="Peter's Tech Repair Logo">
+
+<h1>Peter's Tech Repair</h1>
+
+<h2>Fast, Reliable Device Repair</h2>
+
+<p>
+Professional laptop, phone, tablet and console repair
+serving Salinas and Monterey County.
+</p>
+
+<div class="buttons">
+<a href="tel:8318005909" class="btn btn-primary">Call Now</a>
+<a href="#contact" class="btn btn-secondary">Request Repair</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<div class="container">
+
+<h2 class="section-title">Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>💻 Laptop Repair</h3>
+<p>
+Screen replacement, battery replacement,
+SSD upgrades, charging issues and diagnostics.
+</p>
+</div>
+
+<div class="card">
+<h3>📱 Phone Repair</h3>
+<p>
+Screen repairs, charging ports,
+battery replacement and troubleshooting.
+</p>
+</div>
+
+<div class="card">
+<h3>📲 Tablet Repair</h3>
+<p>
+Tablet screens, batteries,
+software issues and hardware repairs.
+</p>
+</div>
+
+<div class="card">
+<h3>🎮 Console Repair</h3>
+<p>
+HDMI repairs, overheating,
+storage upgrades and power issues.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="container">
+
+<h2 class="section-title">About Us</h2>
+
+<div class="about">
+
+<p>
+Peter's Tech Repair provides quality repair services for laptops,
+phones, tablets and gaming consoles. We focus on honest diagnostics,
+fair pricing and getting your devices back in your hands quickly.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="container">
+
+<h2 class="section-title">Contact Us</h2>
+
+<div class="contact-grid">
+
+<div class="contact-box">
+
+<h3>Contact Information</h3>
+
+<p><strong>Phone:</strong><br>(831) 800-5909</p>
+
+<br>
+
+<p><strong>Email:</strong><br>
+pkottentailz@gmail.com
+</p>
+
+<br>
+
+<p><strong>Location:</strong><br>
+Salinas, California
+</p>
+
+</div>
+
+<div class="contact-box">
+
+<h3>Request a Repair</h3>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<input type="text" placeholder="Device Type">
+
+<textarea rows="5" placeholder="Describe the issue"></textarea>
+
+<button type="submit">
+Submit Request
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Peter's Tech Repair • Fast, Reliable Device Repair
+</p>
+
+</footer>
+
+</body>
+</html>
